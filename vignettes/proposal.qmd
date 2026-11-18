@@ -1,7 +1,18 @@
+---
+title: "Proposals for the BST260 Teaching Team, Fall 2026"
+author: "Christine Yuan"
+date: 2026-11-09
+---
 
-## Research Question
+## Proposal 1
 
+### Research Question
 
+Does the age of the father affect maternal morbidity? 
+
+### Specification of Unit of Analysis and Population
+
+The unit of analysis will be the individual live birth record in the NCHS Natality Public Use File, with each observation representing one live birth recorded in the United States. The study population will consist of all live births occurring in the United States during the selected study period. The analysis will focus on maternal characteristics and delivery-related factors associated with maternal morbidity, as measured by the five reported complications: maternal transfusion, third- or fourth-degree perineal laceration, ruptured uterus, unplanned hysterectomy, and admission to an intensive care unit. Records with missing or unstated maternal morbidity information will be evaluated separately and handled appropriately during data cleaning and analysis.
 
 -  A one-sentence research question, naming one exposure (or a small cluster of related 
 exposures) and one outcome. "How does maternal smoking relate to birth weight?" for example
