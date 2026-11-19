@@ -38,7 +38,7 @@ The unit of analysis will be the individuals in the NHANES data set, most likely
 
 ### Exposure 
 
-The exposure is the number of hours an individual reports they sleep on a weekday or workday. The question is only available to those age 16 and up. This is a numerical variable that could be treated as continuous or ordinal because it is only in integers and not truly continuous. We could look at ordinal using intervals of 2, or just intervals that differ by one. Selection will depend on how the models compare and the ease of interpretation.
+The exposure is the number of hours an individual reports they sleep on a weekday or workday. The question is only available to those age 16 and up. This is a numerical variable that could be treated as continuous or ordinal because it is only in integers and not truly continuous. We could look at ordinal using intervals of 2, or just intervals that differ by one. Selection will depend on how the models compare and the ease of interpretation. Missing data could be imputed using other covariates or treated as a separate category. 
 
 ### Outcome
 
