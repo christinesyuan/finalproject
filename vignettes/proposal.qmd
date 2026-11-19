@@ -12,17 +12,43 @@ Does the age of the father affect maternal morbidity?
 
 ### Specification of Unit of Analysis and Population
 
-The unit of analysis will be the individual live birth record in the NCHS Natality Public Use File, with each observation representing one live birth recorded in the United States. The study population will consist of all live births occurring in the United States during the selected study period. The analysis will focus on maternal characteristics and delivery-related factors associated with maternal morbidity, as measured by the five reported complications: maternal transfusion, third- or fourth-degree perineal laceration, ruptured uterus, unplanned hysterectomy, and admission to an intensive care unit. Records with missing or unstated maternal morbidity information will be evaluated separately and handled appropriately during data cleaning and analysis.
+The unit of analysis will be the individual live birth record in the NCHS Natality Public Use File, with each observation representing one live birth recorded in the United States. The study population will consist of all live births occurring in the United States during the selected study period. 
 
--  A one-sentence research question, naming one exposure (or a small cluster of related 
-exposures) and one outcome. "How does maternal smoking relate to birth weight?" for example
+### Exposure 
 
--  Specification of unit of analysis and population. 
+The exposure is paternal age in years. We can examine this as a continuous or categorical variable, and will most likely be categorical in decades (20-29, 30-39, etc.). We can consider using continuous as well for interpretation or if it fits the model well. Missing responses could be imputed using factors like maternal age, but I would need to figure out what method to use. I could also group all missing responses into their own category and see if it has a significant result. 
 
--  Definition of exposure variable(s) and how you'll code them, including how you'll handle missing responses
+### Outcome
 
--  Specification of outcome variable and whether it's continuous or categorical
+The outcome is maternal morbidity, defined as a binary variable, with value 1 if the mother experienced maternal transfusion, third or fourth-degree perineal laceration, ruptured uterus, unplanned hysterectomy, and admission to an intensive care unit, and 0 otherwise.
 
--  Specification of confounders you'll adjust for, chosen from subject-matter reasoning before looking at the data
+### Confounders
 
-- Your project text will occupy the README.md of your package repository and quarto vignette documents.
+Confounders include but are not limited to mother's age, race/ethnicity, education, number of previous births, BMI, smoking, pre-existing conditions, if its twins or more, and socioeconomic status. Paternal confounders can also include the above. Most of these are subject-matter knowledge.
+
+## Proposal 2
+
+### Research Question
+
+Does sleep hours affect blood pressure? 
+
+### Specification of Unit of Analysis and Population
+
+The unit of analysis will be the individuals in the NHANES data set, most likely with the 2009-2012 edition we have examined already but also could potentially look at the 2025 data set online. Each observation is one person in the data set; according to the CDC, the sample is meant to represent the nation and is conducted through sampling units randomly selected and people are invited to take the survey. The survey is voluntary so there could be selection bias at play. 
+
+### Exposure 
+
+The exposure is the number of hours an individual reports they sleep on a weekday or workday. The question is only available to those age 16 and up. This is a numerical variable that could be treated as continuous or ordinal because it is only in integers and not truly continuous. We could look at ordinal using intervals of 2, or just intervals that differ by one. Selection will depend on how the models compare and the ease of interpretation.
+
+### Outcome
+
+The outcome will be the systolic blood pressure of the individuals, reported in mmHg. This is a numerical continuous category. 
+
+### Confounders
+
+Confounders include sex, age, BMI, pre-existing conditions (especially hypertension), race/ethnicity, socioeconomic status, cholesterol, mental health, smoking, marijuana and drug usage. 
+
+
+
+
+
